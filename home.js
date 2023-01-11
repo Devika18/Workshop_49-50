@@ -26,7 +26,11 @@ window.addEventListener('DOMContentLoaded',(even) => {
             <td>${addressBookData._phoneNumber}</td>
             <td>
             <img id="${addressBookData._name}" onclick="remove(this)" alt="delete" src="./assests/icons/delete-black-18dp.svg">
+<<<<<<< HEAD
             <img id="${addressBookData._name}" onclick="update(this)" alt="edit" src="./assests/icons/create-black-18dp.svg">
+=======
+            <img name="${addressBookData._name}" onclick="update(this)" alt="edit" src="./assests/iconscreate-black-18dp.svg">
+>>>>>>> 9152c068ba3f77eb4c1923bab0b9f1fe69a57566
             </td>
          </tr>
         `;
@@ -43,6 +47,7 @@ window.addEventListener('DOMContentLoaded',(even) => {
         localStorage.setItem("AddressBookList", JSON.stringify(addressBookList));
         document.querySelector(".person-count").textContent=addressBookList.length;
         createInnerHtml();
+<<<<<<< HEAD
     } 
     const update = (node) => {
         let addressBookData = addressBookList.find(personData => personData._name == node.id);
@@ -54,3 +59,6 @@ window.addEventListener('DOMContentLoaded',(even) => {
         home_page: "home.html",
         add_person_page: "AddPersonAddressBook.html"
     };
+=======
+    } 
+>>>>>>> 9152c068ba3f77eb4c1923bab0b9f1fe69a57566
